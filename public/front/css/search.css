@@ -1,0 +1,35 @@
+/* 搜索历史 */
+.lt-history{
+    padding: 10px;
+}
+
+.lt-history .lt-history-title{
+    height: 30px;
+    font-size:12px;
+    color: #666;
+    line-height: 30px;
+}
+
+.lt-history .lt-history-content{
+    border: 1px dashed #000;
+}
+
+.lt-history .lt-history-content li{
+    padding:0 10px;
+    border-bottom: 1px dashed #000;
+    line-height: 30px;
+    height: 30px;
+}
+
+.lt-history .lt-history-content li a{
+    color: red;
+}
+
+.lt-history .lt-history-content li:last-child{
+    border-bottom: none;
+}
+
+.lt-history .lt-history-content li i {
+    height: 30px;
+    line-height: 30px;
+}

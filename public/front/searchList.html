@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no,minimum-scale=1.0,maximum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./lib/mui/css/mui.css">
+    <link rel="stylesheet" href="lib/fa/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/searchList.css">
+
+    <title>乐淘云购</title>
+</head>
+<body>
+    <!-- 布局 -->
+    <div class="lt_layout">
+        <!-- 乐淘头部 -->
+        <div class="lt-header">
+            <!-- history.back()返回上一步 -->
+            <a href="javascript:history.back();" class="icon-left mui-icon mui-icon-back">
+
+            </a>
+            <p class="title">商品列表</p>
+            </a>
+        </div>
+
+        <!-- 乐淘主体 -->
+        <div class="lt-main">
+            <!-- 区域滚动 -->
+            <div class="mui-scroll-wrapper">
+                <div class="mui-scroll">
+                    <!--这里放置真实显示的DOM内容-->
+                    <!-- 搜索框 -->
+                    <div class="lt-search">
+                        <input type="text" class="lt-search-input" placeholder="请输入搜索关键字">
+                        <button class="mui-btn mui-btn-primary lt-search-btn">搜索</button>
+                    </div>
+
+                    <!-- 排序 -->
+                    <div class="lt_sort">
+                        <a href="#">上架时间<i class="fa fa-angle-down"></i></a>
+                        <a href="#" data-type="price">价格<i class="fa fa-angle-down"></i></a>
+                        <a href="#" data-type="num">库存<i class="fa fa-angle-down"></i></a>
+                        <a href="#">折扣<i class="fa fa-angle-down"></i></a>
+                    </div>
+
+                    <!-- 产品 -->
+                    <div class="lt-product">
+                        <!-- 加载 -->
+                        <!-- <div class="loding"></div> -->
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+        <!-- 乐淘底部 -->
+        <div class="lt-footer">
+            <ul>
+                <li>
+                    <a href="index.html">
+                        <i class='fa fa-home'></i>
+                        <p>首页</p>
+                    </a>
+                    
+                </li>
+                <li>
+                    <a href="category.html">
+                        <i class="fa fa-bars"></i>
+                        <p>分类</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="cart.html">
+                        <i class="fa fa-shopping-cart"></i>
+                        <p>购物车</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="user.html">
+                        <i class="fa fa-user"></i>
+                        <p>用户</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 准备模板 -->
+    <script type="text/html" id="productTpl">
+            <ul>
+                {{ each data v i }}
+                <li>
+                    <a href="product.html?productId={{ v.id }}" data-id="{{ v.id }}">
+                        <img src="{{ v.pic[0].picAddr }}" alt="">
+                        <!-- mui-ellipsis-2:文字超过两行省略 -->
+                        <p class="mui-ellipsis-2 product-title">{{ v.proName }}</p>
+                        <p>
+                            <span class="price">¥{{ v.price }}</span>
+                            <span class='oldPrice'>¥{{ v.oldPrice }}</span>
+                        </p>
+                        <button class="mui-btn mui-btn-primary">立即购买</button>
+                    </a>
+                </li>
+                {{ /each }}
+            </ul>
+    </script>
+
+    
+    <script src="lib/mui/js/mui.js"></script>
+    <script src="lib/zepto/zepto.min.js"></script>
+    <script src="lib/artTemplate/template-web.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/searchList.js"></script>
+</body>
+</html>

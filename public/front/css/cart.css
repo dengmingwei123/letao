@@ -1,0 +1,41 @@
+.lt-main .mui-table-cell{
+    display:block;
+}
+/* 商品左侧 */
+.lt-main .left_img{
+    width: 60px;
+    height: 90px;
+    float:left;
+}
+.lt-main .left_img img{
+    width: 60px;
+    height: 60px;
+}
+
+/* 商品右侧 */
+.lt-main .right_content{
+    height: 90px;
+    overflow:hidden;
+    padding: 0 5px;
+}
+
+/* 商品价格 */
+.lt-main .produ_price span{
+    color: #666;
+    font-size: 14px;
+}
+
+.lt-main .produ_price .price{
+    color: red;
+}
+
+.lt-main .produ_price .oldPrice{
+    text-decoration:line-through;
+    font-size: 12px;
+}
+
+/* 产品鞋码 */
+.lt-main .produ_size{
+    font-size: 14px;
+    color: #666;
+}

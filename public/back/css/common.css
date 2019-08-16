@@ -1,0 +1,157 @@
+.mt-150{
+    margin-top:150px;
+}
+.mb_20{
+    margin-bottom:20px;
+}
+
+.red{
+    color: #A94442;
+}
+
+a,
+a:hover,
+a:link,
+a:active,
+a:visited{
+    text-decoration:none;
+}
+
+ul{
+    list-style:none;
+    margin:0;
+    padding: 0;
+}
+
+
+.body_bg{
+    background-color: #222D32;
+}
+/* 登录框标题 */
+.panel .login-title{
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size:20px;
+}
+
+/* 侧边栏 */
+.lt_sidebar{
+    width: 180px;
+    height: 100%;
+    position:fixed;
+    left: 0;
+    top: 0;
+    background-color: #222D32;
+    transition:all 1s;
+    z-index:999;
+}
+/* 隐藏侧边栏 */
+.lt_sidebar.hidemenu{
+    left:-180px;
+}
+
+.lt_sidebar .title a{
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    text-align:center;
+    color: #fff;
+    font-size:26px;
+    background-color: #367FA9;
+}
+
+.lt_sidebar .user{
+    width: 100%;
+    height: 180px;
+    padding-top: 30px;
+    text-align:center;
+}
+
+.lt_sidebar .user img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.lt_sidebar .user p{
+    font-size: 20px;
+    color: #fff;
+    height: 40px;
+    line-height: 40px;
+}
+
+.lt_sidebar .navbar a{
+    display:block;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 40px;
+    color: #fff;
+    border-left:3px solid transparent;
+}
+
+.lt_sidebar .navbar .child a{
+    padding-left: 60px;
+}
+
+.lt_sidebar .navbar a.current{
+    background-color: #1D1F21;
+    border-color: #069;
+}
+
+.lt_main{
+    height: 1200px;
+    padding-top: 50px;
+    padding-left: 180px;
+    transition:all 1s;
+}
+.lt_main.hidemenu{
+    padding-left:0px;
+}
+
+/* 顶部栏 */
+.lt_main .lt_torbar{
+    position:fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    padding-left: 180px;
+    background-color: #3C8DBC;
+    transition:all 1s;
+    z-index:666;
+}
+.lt_torbar.hidemenu{
+    padding-left: 0px;
+}
+.lt_torbar a,
+.lt_torbar a:hover,
+.lt_torbar a:link,
+.lt_torbar a:active,
+.lt_torbar a:visited{
+    color: #fff;
+}
+
+.icon_menu,
+.icon_logout{
+    height: 50px;
+    width:50px;
+    line-height: 50px;
+    text-align:center;
+    font-size:18px;
+    color: #fff;
+}
+
+/* 路径导航 */
+.breadcrumb{
+    margin-top: 20px;
+}
+
+/* 表格 */
+.table.table-bordered tr th,
+.table.table-bordered tr td{
+    text-align: center;
+    vertical-align:middle;
+}
+
+

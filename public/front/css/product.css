@@ -1,0 +1,45 @@
+/* 公共类 */
+.product-box{
+    padding: 10px;
+    border-top: 1px solid #ccc;
+}
+
+/* 产品价格 */
+.product-price .price{
+    color: red;
+}
+
+.product-price .oldPrice{
+    color: #666;
+    text-decoration:line-through;
+    font-size: 12px;
+}
+
+
+/* 产品数量 */
+.product-num .introduce{
+    font-size:12px;
+    color:#666;
+}
+
+/* 产品详情 */
+.product-particulars p{
+    font-size: 18px;
+    color: #000;
+}
+
+.go-cart{
+    height: 55px;
+    width: 100%;
+    background-color: #EFEFF4;
+    padding: 10px;
+}
+
+.go-cart .go-cart-btn{
+    padding: 7px;
+}
+
+/* 设置轮播图的高 */
+.lt-main .mui-slider .mui-slider-item img{
+    height: 400px;
+}

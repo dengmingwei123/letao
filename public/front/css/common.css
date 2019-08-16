@@ -1,0 +1,179 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+ul,li{
+    list-style: none;
+}
+
+img{
+    display: block;
+    width: 100%;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+.lt_layout{
+    position:relative;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    max-width: 640px;
+    min-width: 320px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding-top: 45px;
+    padding-bottom:55px;
+}
+
+/* 头部 */
+.lt-header{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 45px;
+    background-color: #069;
+    padding:0 45px;
+    text-align: center;
+}
+
+.lt-header .icon-left,
+.lt-header .icon-right{
+    position:absolute;
+    left: 0;
+    top: 0;
+    width: 45px;
+    line-height: 45px;
+    color: #fff;
+}
+
+.lt-header .icon-right{
+    left:auto;
+    right: 0;
+}
+
+.lt-header .title{
+    font-size:20px;
+    color: #fff;
+    line-height: 45px;
+}
+
+/* 底部 */
+.lt-footer{
+    position: absolute;
+    left: 0;
+    bottom:0;
+    width: 100%;
+    height: 55px;
+    background-color: #069;
+}
+
+.lt-footer li{
+    text-align: center;
+    float: left;
+    width: 25%;
+}
+
+.lt-footer a{
+    display:block;
+    padding-top: 8px;
+    color: #fff;
+}
+
+.lt-footer a p {
+    color: #fff;
+    margin-bottom:0;
+}
+
+.lt-footer a.current{
+    color:orange;
+}
+
+.lt-footer a.current p {
+    color:orange;
+}
+
+.lt-main{
+    position:relative;
+    width: 100%;
+    height: 100%;
+}
+
+/* 搜索框 */
+.lt-search {
+    position:relative;
+    padding: 10px;
+}
+
+.lt-search .lt-search-input{
+    height: 34px;
+    border-color: #007AFF;
+    padding-right: 55px;
+    padding-left: 10px;
+    font-size:12px;
+    border-radius: 5px;
+}
+
+.lt-search .lt-search-btn{
+    position:absolute;
+    right: 10px;
+    top: 10px;
+    border-radius: 0px 5px 5px 0px;
+}
+
+/* 产品 */
+.lt-product{
+    padding:10px;
+}
+
+.lt-product li{
+    float: left;
+    width: 48%;
+    text-align: center;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.lt-product li:nth-child(odd){
+    margin-right: 4%;
+}
+
+.lt-product li img {
+    width: 150px;
+    height: 150px;
+    
+    margin: 0 auto;
+}
+
+.lt-product li .price{
+    color: red;
+}
+
+.lt-product li .oldPrice{
+    text-decoration:line-through;
+}
+
+.lt-product li .product-title{
+    height: 45px;
+}
+
+
+/* 产品尺码 */
+.product-size .yardage{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    font-size: 12px;
+    border:1px solid #ccc;
+    line-height: 25px;
+    text-align: center;
+    margin:3px 0;
+}
+.product-size .yardage.current{
+    background-color: orange;
+}

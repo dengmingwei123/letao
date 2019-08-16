@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no,minimum-scale=1.0,maximum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./lib/mui/css/mui.css">
+    <link rel="stylesheet" href="lib/fa/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/category.css">
+    <title>乐淘云购</title>
+</head>
+<body>
+    <!-- 布局 -->
+    <div class="lt_layout">
+        <!-- 乐淘头部 -->
+        <div class="lt-header">
+            <a href="index.html" class="icon-left fa fa-home">
+
+            </a>
+            <p class="title">乐淘云购</p>
+            <a href="search.html" class="icon-right fa fa-search">
+
+            </a>
+        </div>
+
+        <!-- 乐淘主体 -->
+        <div class="lt-main">
+            
+            <!-- 左侧导航 -->
+            <div class="lt-cate-left">
+                <!-- 区域滚动 -->
+                <div class="mui-scroll-wrapper">
+                    <div class="mui-scroll">
+                        <!--这里放置真实显示的DOM内容-->
+                        <ul>
+                            <!-- 挖坑 -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 内容 -->
+            <div class="lt-cate-container">
+                <!-- 区域滚动 -->
+                <div class="mui-scroll-wrapper">
+                    <div class="mui-scroll">
+                        <!--这里放置真实显示的DOM内容-->
+                        <!-- 挖坑 -->
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+        <!-- 乐淘底部 -->
+        <div class="lt-footer">
+            <ul>
+                <li>
+                    <a href="index.html">
+                        <i class='fa fa-home'></i>
+                        <p>首页</p>
+                    </a>
+                    
+                </li>
+                <li>
+                    <a href="category.html" class="current">
+                        <i class="fa fa-bars"></i>
+                        <p>分类</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="cart.html">
+                        <i class="fa fa-shopping-cart"></i>
+                        <p>购物车</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="user.html">
+                        <i class="fa fa-user"></i>
+                        <p>用户</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 模板引擎左侧 -->
+    <script type='text/html' id="leftTpl">
+        {{ each rows v i }}
+        <li><a href="#" class="{{ i === 0 ? 'current' : '' }}" data-id="{{ v.id }}">{{ v.categoryName }}</a></li>
+        {{ /each }}
+    </script>
+
+    <!-- 模板引擎右侧 -->
+    <!-- 判断传回来数据长度是否为0,如果是0,则输出一句话 -->
+    <script type="text/html" id="rightTpl">
+        {{ if rows.length === 0 }}
+            <p class="tips">没有更多分类信息了</p>
+        {{ else }}
+        <ul>
+            {{ each rows v i }}
+            <li>
+                <a href="#">
+                    <img src="{{ v.brandLogo }}" alt="">
+                    <p>{{ v.brandName }}</p>
+                </a>
+            </li>
+            {{ /each }}
+        </ul>
+        {{ /if }}
+    </script>
+
+
+    
+    <script src="lib/mui/js/mui.js"></script>
+    <script src="lib/zepto/zepto.min.js"></script>
+    <script src="lib/artTemplate/template-web.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/category.js"></script>
+</body>
+</html>

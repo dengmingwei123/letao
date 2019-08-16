@@ -1,0 +1,15 @@
+/* 导航 */
+.lt-navbar{
+    padding:10px;
+}
+
+.lt-navbar li {
+    float:left;
+    width: 33.3%;
+}
+
+.lt-navbar li a{
+    display:block;
+}
+
+
